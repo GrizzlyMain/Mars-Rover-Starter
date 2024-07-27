@@ -1,10 +1,12 @@
 class Message {
    // Write code here!
-   constructor(name){
-   this.name = name;
+constructor(name, commands){
+  this.name = name;
+  
    if (!name) {
       throw Error('name required.');
     }
+    this.commands = commands;
    }
 };
 
